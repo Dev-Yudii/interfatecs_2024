@@ -17,7 +17,7 @@ usuarios = int(input()) #Pegando o número de usuários
 for i in range(usuarios): #Um for que se repete para cada usuário
     entrada = [] #Aqui uma lista que é zerada a cada loop do for
     for j in range(6): #Um for que pega 6 linhas de entrada de cada usuário
-        entrada.append(list(map(int,input().split()))) #Adicionamos as entradas na lista entrada
+        entrada.append(list(map(int, input().split()))) #Adicionamos as entradas na lista entrada
     #Saimos do loop, agora que já pegamos as entradas de cada usuário, somamos o número de vezes que cada usuário olhou para cada região.
     superior += sum(entrada[0]) #Aqui a lista recebe a soma de números 1 na primeira linha de cada conjunto de entradas
     esquerda += sum(i[0] for i in entrada[1:5]) #Aqui a lista recebe a soma de números 1 de cada linha da 1 a 4, na primeira coluna
@@ -32,6 +32,6 @@ regioes = {
     'centro'   : centro,
     'direita'  : direita,
     'inferior' : inferior
-    }
+}
 
 print(max(regioes, key = regioes.get)) #Função max retorna o maior número associado a região.
