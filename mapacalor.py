@@ -5,6 +5,8 @@ Centro   (1, 1, 1, 4)
 Direita  (2, 1, 2, 4)
 Inferior (0, 5, 2, 5)
 
+Visualização:
+
 SSS
 ECD
 ECD
